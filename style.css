@@ -1,0 +1,131 @@
+/* style.css */
+body {
+    /* Fond rose avec un motif à pois imitation paillettes/kitch */
+    background-color: #ffb6c1; 
+    background-image: radial-gradient(#ff1493 15%, transparent 16%), radial-gradient(#ff1493 15%, transparent 16%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    
+    font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
+    text-align: center;
+    color: #ff1493;
+    text-shadow: 2px 2px 0px white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+    animation: blink 2s infinite;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px dashed #ff1493;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+input {
+    padding: 15px;
+    font-size: 18px;
+    font-family: inherit;
+    border: 4px solid #ff1493;
+    border-radius: 25px;
+    width: 300px;
+    outline: none;
+    background-color: #fff0f5;
+    box-shadow: 0px 0px 15px #ff1493;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 2px solid #ff1493;
+    border-radius: 10px;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    text-shadow: none;
+    color: black;
+    font-family: sans-serif;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ffb6c1;
+}
+
+.autocomplete-items div:hover {
+    background-color: #ff1493;
+    color: white;
+}
+
+.table-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.table-header, .guess-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.table-header div {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-shadow: 1px 1px 2px black;
+    border: 2px solid white;
+}
+
+.guess-row div {
+    padding: 15px 5px;
+    border-radius: 8px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Couleurs Wordle : Cyan pour bon, Rouge pour faux */
+.correct { 
+    background-color: #00FFFF; /* Cyan */
+    color: black !important; 
+    text-shadow: none !important;
+}
+
+.incorrect { 
+    background-color: #FF0000; /* Rouge */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; text-shadow: 0px 0px 20px white; }
+    100% { opacity: 1; }
+}

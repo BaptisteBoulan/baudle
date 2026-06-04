@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baudle - Le Jeu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>✨ Baudle ✨</h1>
+    <p class="subtitle">🦋 Devine qui est la star du moment 🦋</p>
+    
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Cherche un(e) invité(e)..." autocomplete="off">
+        <div id="autocomplete-list" class="autocomplete-items"></div>
+    </div>
+
+    <div class="table-container">
+        <div class="table-header">
+            <div>Nom</div>
+            <div>Sexe</div>
+            <div>Âge</div>
+            <div>Étude</div>
+            <div>Situation</div>
+        </div>
+        <div id="guesses"></div> 
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
