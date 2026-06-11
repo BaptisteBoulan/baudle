@@ -5,7 +5,7 @@ const SALTIBAMQUE = "Saltimbanque";
 const TOUBIB = "Médecin pas encore médecin";
 const CELIB = "Looser célib";
 const COUPLE = "Aspi cool kid en couple";
-const FIANCE = "Gros darons marié/fiancé";
+const FIANCE = "Gros daron marié/fiancé";
 const HOMME = "Homme";
 const FEMME = "Femme";
 
