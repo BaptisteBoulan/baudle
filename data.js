@@ -32,7 +32,7 @@ const personnages = [
     { nom: "Eude le gros daron à Baudouin", sexe: HOMME, age: 59, etude: INGE, situation: FIANCE },
     { nom: "Mayeul", sexe: HOMME, age: 24, etude: SALTIBAMQUE, situation: CELIB },
     { nom: "Alice l'ex de Batoo", sexe: FEMME, age: 23, etude: TOUBIB, situation: COUPLE },
-    { nom: "Clémence pas l'ex de Pierrick", sexe: FEMME, age: 23, etude: TOUBIB, situation: CELIB },
+    { nom: "Clémence pas l'ex de Pierrick", sexe: FEMME, age: 23, etude: TOUBIB, situation: COUPLE },
     { nom: "Sixtine l'ex de Toto", sexe: FEMME, age: 22, etude: COMMERCIAL, situation: CELIB },
     { nom: "Baudouin ce gros bg", sexe: HOMME, age: 23, etude: TOUBIB, situation: FIANCE },
     { nom: "Comphaël", sexe: HOMME, age: 23, etude: TOUBIB, situation: COUPLE },
@@ -40,4 +40,5 @@ const personnages = [
     { nom: "Louis Poirrier-Couta", sexe: HOMME, age: 23, etude: TOUBIB, situation: COUPLE },
     { nom: "Ornella", sexe: FEMME, age: 23, etude: TOUBIB, situation: CELIB },
     { nom: "Josifun", sexe: FEMME, age: 24, etude: TOUBIB, situation: FIANCE },
+    { nom: "Laure pas la meuf du mec qui a oublié sa brosse à dent", sexe: FEMME, age: 24, etude: TOUBIB, situation: CELIB },
 ]
